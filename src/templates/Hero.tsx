@@ -36,7 +36,9 @@ const Hero = () => (
         button={
           <Link href="/">
             <a>
-              <Button xl>Join the wait list</Button>
+              <Button xl secondary>
+                Join the list
+              </Button>
             </a>
           </Link>
         }
