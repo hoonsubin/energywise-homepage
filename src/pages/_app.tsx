@@ -1,9 +1,10 @@
 import { AppProps } from 'next/app';
+import { appWithTranslation } from 'next-i18next';
 
 import '../styles/global.css';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
+const EnergywiseHomepage = ({ Component, pageProps }: AppProps) => (
   <Component {...pageProps} />
 );
 
-export default MyApp;
+export default appWithTranslation(EnergywiseHomepage);
