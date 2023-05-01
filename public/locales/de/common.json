@@ -1,0 +1,35 @@
+{
+  "banner": {
+    "title": "Like what you see?",
+    "description": "Be part of the change!",
+    "button": "Join waiting list"
+  },
+  "features": {
+    "section-head": {
+      "title": "This is the section title",
+      "description": "This is the section description."
+    },
+    "feature1": {
+      "title": "Feature 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+    },
+    "feature2": {
+      "title": "Feature 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+    },
+    "feature3": {
+      "title": "Feature 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+    },
+    "feature4": {
+      "title": "Feature 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+    }
+  },
+  "hero": {
+    "first-line": "The simplest way to get started with your",
+    "second-line": "home EV charging station",
+    "slogan": "Get started to charge your world from your finger tips.",
+    "button": "Join the list"
+  }
+}

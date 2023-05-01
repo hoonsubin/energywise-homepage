@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
 import { Logo } from './Logo';
 import { Background } from '../background/Background';
@@ -7,44 +8,49 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 
-const Hero = () => (
-  <Background color="bg-primary-800">
-    <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/hoonsubin/energywise-homepage">
-            <a>GitHub</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Sign in</a>
-          </Link>
-        </li>
-      </NavbarTwoColumns>
-    </Section>
+const Hero = () => {
+  const { t } = useTranslation('common');
 
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
-        title={
-          <>
-            {'The simplest way to get started with your\n'}
-            <span className="text-primary-500">home EV charging station</span>
-          </>
-        }
-        description="Get started to charge your world from your finger tips."
-        button={
-          <Link href="/">
-            <a>
-              <Button xl secondary>
-                Join the list
-              </Button>
-            </a>
-          </Link>
-        }
-      />
-    </Section>
-  </Background>
-);
+  return (
+    <Background color="bg-primary-800">
+      <Section yPadding="py-6">
+        <NavbarTwoColumns logo={<Logo xl />}>
+          <li>
+            <Link href="https://github.com/hoonsubin/energywise-homepage">
+              <a>GitHub</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>Sign in</a>
+            </Link>
+          </li>
+        </NavbarTwoColumns>
+      </Section>
+
+      <Section yPadding="pt-20 pb-32">
+        <HeroOneButton
+          title={
+            <>
+              {t('hero.first-line')}
+              {'\n'}
+              <span className="text-primary-500">{t('hero.second-line')}</span>
+            </>
+          }
+          description={t('hero.slogan')}
+          button={
+            <Link href="/">
+              <a>
+                <Button xl secondary>
+                  {t('hero.button')}
+                </Button>
+              </a>
+            </Link>
+          }
+        />
+      </Section>
+    </Background>
+  );
+};
 
 export { Hero };
