@@ -7,8 +7,8 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title="ENERGYWISE - EASY.TRUSTWORTHY.RELIABLE."
+      subtitle="Stay up to date and be the first to use energywise."
       button={
         <Link href="/">
           <a>
