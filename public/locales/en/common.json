@@ -1,29 +1,29 @@
 {
   "banner": {
-    "title": "Like what you see?",
-    "description": "Be part of the change!",
-    "button": "Join waiting list"
+    "title": "ENERGYWISE - EASY.TRUSTWORTHY.RELIABLE.",
+    "description": "Stay up to date and be the first to use energywise.",
+    "button": "Get Started"
   },
   "features": {
     "section-head": {
-      "title": "This is the section title",
-      "description": "This is the section description."
+      "title": "energywise",
+      "description": "Energywise provides personalized solutions and expert guidance for all your EV charging needs."
     },
     "feature1": {
-      "title": "Feature 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      "title": "Charging station assessment",
+      "description": "This survey will ask the customer questions about their daily driving habits, the type of EV they own, their home's electrical setup, and other relevant factors to determine the most suitable charging options for them."
     },
     "feature2": {
-      "title": "Feature 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      "title": "Charging station directory",
+      "description": "energywise will provide the customer with a list of charging station hardware and software options that best meet their needs, along with pricing information and installation options."
     },
     "feature3": {
-      "title": "Feature 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      "title": "Technician directory",
+      "description": "By simply entering their location, customers can access a list of reliable technicians in their area, complete with contact information and customer reviews."
     },
     "feature4": {
-      "title": "Feature 4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      "title": "About us",
+      "description": "We, a group of students from Hochschule Müchen, created energywise to be your partner in your journey towards sustainable transportation by getting to know your needs and offering persosonalized information and guidance."
     }
   },
   "hero": {
