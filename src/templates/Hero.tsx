@@ -34,7 +34,7 @@ const Hero = () => (
         }
         description="Get started to charge your world from your finger tips."
         button={
-          <Link href="/">
+          <Link href="mailto:team@energywise.solutions">
             <a>
               <Button xl secondary>
                 Join the list

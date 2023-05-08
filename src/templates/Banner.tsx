@@ -10,7 +10,7 @@ const Banner = () => (
       title="ENERGYWISE - EASY.TRUSTWORTHY.RELIABLE."
       subtitle="Stay up to date and be the first to use energywise."
       button={
-        <Link href="/">
+        <Link href="mailto:team@energywise.solutions">
           <a>
             <Button>Get Started</Button>
           </a>
