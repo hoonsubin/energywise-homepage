@@ -14,7 +14,7 @@ const Banner = () => {
         title={t('banner.title')}
         subtitle={t('banner.description')}
         button={
-          <Link href="/">
+          <Link href="mailto:team@energywise.solutions?subject=I'm interested in energywise&body=I would like to learn more about energywise, please keep me updated">
             <a>
               <Button>{t('banner.button')}</Button>
             </a>
