@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import { Logo } from './Logo';
 
-const Hero = () => {
+export const Hero = () => {
   useEffect(() => {
     let prevScrollY = 0;
 
