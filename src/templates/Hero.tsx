@@ -1,9 +1,6 @@
 import React, { useEffect, useCallback, useState, useRef } from 'react';
-
-//import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { Logo } from './Logo';
 
 export const Hero = () => {
@@ -66,8 +63,6 @@ export const Hero = () => {
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"
-            //whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-            //whileTap={{ scale: 0.9 }}
             href="https://github.com/hoonsubin/energywise-homepage"
           >
             GitHub
@@ -81,10 +76,8 @@ export const Hero = () => {
         <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
           <div id="hero-image" className="hero-image" ref={heroImageRef}>
             <div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5 }}
               className="absolute inset-0 z-0 overflow-hidden rounded-lg"
+              style={{ opacity: 0, transform: 'scale(0.8)' }}
             >
               <Image
                 src="/assets/images/herobanner.jpg"
@@ -98,20 +91,8 @@ export const Hero = () => {
           </div>
         </div>
         <div className="relative z-10">
-          <h2
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-1xl md:text-2xl lg:text-4xl"
-          >
-            The simplest way to get started with your
-          </h2>
-          <h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="text-3xl md:text-8xl lg:text-10xl font-black uppercase mb-8"
-          >
+          <h2 className="text-1xl md:text-2xl lg:text-4xl">The simplest way to get started with your</h2>
+          <h1 className="text-3xl md:text-8xl lg:text-10xl font-black uppercase mb-8">
             home EV charging station
           </h1>
           <div className="text-lg md:text-2xl ls:text-3xl py-2 px-4 md:py-4 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 w-fit mx-auto mb-8 rounded-full survey-button">
@@ -121,8 +102,6 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="block w-full h-full rounded-full flex items-center justify-center text-black font-bold text-xl md:text-2xl lg:text-4xl"
               style={{ backgroundColor: '#E4FF1A', padding: '1rem' }}
-              //whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-              //whileTap={{ scale: 0.9 }}
             >
               Take Survey
             </a>
@@ -182,4 +161,3 @@ export const Hero = () => {
 };
 
 export default Hero;
-
