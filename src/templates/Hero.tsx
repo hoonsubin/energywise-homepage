@@ -1,8 +1,6 @@
 import React, { useEffect, useCallback, useState, useRef } from 'react';
-
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { Logo } from './Logo';
 
 export const Hero = () => {
@@ -100,7 +98,7 @@ export const Hero = () => {
           </p>
 
           <div className="md:flex md:justify-center mt-12">
-            <div className="lg:py-6 lg:px-12 bg-white bg-opacity-10 w-fit mx-auto mb-8 rounded-full survey-button">
+            <div className="lg:mr-4 mb-4 lg:mb-0 rounded-full survey-button">
               <a
                 href="https://energywise.solutions/"
                 target="_blank"
