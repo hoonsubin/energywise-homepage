@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React, { useEffect, useCallback, useState, useRef } from 'react';
 
 //import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -7,22 +7,27 @@ import Link from 'next/link';
 import { Logo } from './Logo';
 
 export const Hero = () => {
+  const heroImageRef = useRef(null);
+
   useEffect(() => {
     let prevScrollY = 0;
 
     const handleScroll = () => {
-      const heroImage = document.getElementById('hero-image');
-      const { scrollY } = window;
+      const heroImage = heroImageRef.current;
 
-      if (scrollY > prevScrollY) {
-        // Scrolling down, hide the image
-        heroImage.style.opacity = '0';
-      } else {
-        // Scrolling up, show the image
-        heroImage.style.opacity = '1';
+      if (heroImage) {
+        const { scrollY } = window;
+
+        if (scrollY > prevScrollY) {
+          // Scrolling down, hide the image
+          heroImage.style.opacity = '0';
+        } else {
+          // Scrolling up, show the image
+          heroImage.style.opacity = '1';
+        }
+
+        prevScrollY = scrollY;
       }
-
-      prevScrollY = scrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
