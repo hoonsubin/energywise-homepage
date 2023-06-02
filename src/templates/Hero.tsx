@@ -1,7 +1,7 @@
 import React, { useEffect, useCallback, useState, useRef } from 'react';
 import Image from 'next/image';
-
 import Link from 'next/link';
+
 import { Logo } from './Logo';
 
 export const Hero = () => {
@@ -118,17 +118,14 @@ export const Hero = () => {
                   type="email"
                   id="email"
                   name="member[email]"
-                  className="text-lg md:text-2xl placeholder:text-gray-400 placeholder-italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10
-                focus:bg-opacity-20 duration-150 rounded-full md:rounded-tr-none md:rounded-br-none mb-4 md:mb-0 outline-none"
+                  className="text-lg md:text-2xl placeholder:text-gray-400 placeholder-italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 focus:bg-opacity-20 duration-150 rounded-full md:rounded-tr-none md:rounded-br-none mb-4 md:mb-0 outline-none"
                   value={emailInputValue}
                   onChange={handleEmailInputChange}
                 />
                 <div className="flex-shrink-0">
                   <a
                     href="mailto:team@energywise.solutions?subject=I'm interested in energywise&body=I would like to learn more about energywise, please keep me updated"
-                    className="bg-primary rounded-full md:rounded-tl-none
-                  md:rounded-bl-none text-lg md:text-2xl py-4 px-6 md:px-10 lg:py-6
-                  lg:px-12 cursor-pointer hover:opacity-75 duration-150 text-black font-bold"
+                    className="bg-primary rounded-full md:rounded-tl-none md:rounded-bl-none text-lg md:text-2xl py-4 px-6 md:px-10 lg:py-6 lg:px-12 cursor-pointer hover:opacity-75 duration-150 text-black font-bold"
                     style={{ backgroundColor: '#E4FF1A' }}
                     onClick={validateEmail}
                   >
