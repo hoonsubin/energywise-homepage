@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Logo } from './Logo';
 
 export const Hero = () => {
-  const heroImageRef = useRef(null);
+  const heroImageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let prevScrollY = 0;
@@ -79,7 +79,7 @@ export const Hero = () => {
       </div>
       <main className="container mx-auto px-6 pt-16 flex-1 text-center relative">
         <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
-          <div id="hero-image" className="hero-image">
+          <div id="hero-image" className="hero-image" ref={heroImageRef}>
             <div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
