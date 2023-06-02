@@ -41,17 +41,14 @@ export const Hero = () => {
     setEmailInputValue(event.target.value);
   }, []);
 
-  const validateEmail = useCallback(
-    (event) => {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const validateEmail = useCallback((event) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      if (!emailRegex.test(emailInputValue)) {
-        alert('Please enter a valid email address.');
-        event.preventDefault();
-      }
-    },
-    [emailInputValue]
-  );
+    if (!emailRegex.test(emailInputValue)) {
+      alert('Please enter a valid email address.');
+      event.preventDefault();
+    }
+  }, [emailInputValue]);
 
   return (
     <div className="min-h-screen flex flex-col text-white">
@@ -168,4 +165,5 @@ export const Hero = () => {
     </div>
   );
 };
+
 export default Hero;
