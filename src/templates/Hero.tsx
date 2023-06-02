@@ -72,6 +72,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
+
       <main className="container mx-auto px-6 pt-16 flex-1 text-center relative">
         <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
           <div id="hero-image" className="hero-image" ref={heroImageRef}>
@@ -90,6 +91,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight">
             The simplest way to get started with your <br /> energy-saving journey
@@ -98,6 +100,7 @@ export const Hero = () => {
             Energywise provides tools and resources to help you track, analyze, and optimize your<br />
             energy consumption, leading to cost savings and a greener future.
           </p>
+
           <div className="md:flex md:justify-center mt-12">
             <div className="lg:py-6 lg:px-12 bg-white bg-opacity-10 w-fit mx-auto mb-8 rounded-full survey-button">
               <a
@@ -110,6 +113,7 @@ export const Hero = () => {
                 Take Survey
               </a>
             </div>
+
             <form action="------" method="post" target="_blank">
               <div className="flex flex-col md:flex-row justify-center items-center mb-4">
                 <input
@@ -164,5 +168,3 @@ export const Hero = () => {
     </div>
   );
 };
-
-export default Hero;
