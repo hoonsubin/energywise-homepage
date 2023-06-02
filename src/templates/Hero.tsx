@@ -91,69 +91,74 @@ export const Hero = () => {
           </div>
         </div>
         <div className="relative z-10">
-          <h2 className="text-1xl md:text-2xl lg:text-4xl">The simplest way to get started with your</h2>
-          <h1 className="text-3xl md:text-8xl lg:text-10xl font-black uppercase mb-8">
-            home EV charging station
-          </h1>
-          <div className="text-lg md:text-2xl ls:text-3xl py-2 px-4 md:py-4 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 w-fit mx-auto mb-8 rounded-full survey-button">
-            <a
-              href="https://energywise.solutions/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full h-full rounded-full flex items-center justify-center text-black font-bold text-xl md:text-2xl lg:text-4xl"
-              style={{ backgroundColor: '#E4FF1A', padding: '1rem' }}
-            >
-              Take Survey
-            </a>
-          </div>
-          <form action="------" method="post" target="_blank">
-            <div className="flex flex-col md:flex-row justify-center items-center mb-4">
-              <input
-                placeholder="Your email address"
-                type="email"
-                id="email"
-                name="member[email]"
-                className="text-lg md:text-2xl placeholder:text-gray-400 placeholder-italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight">
+            The simplest way to get started with your <br /> energy-saving journey
+          </h2>
+          <p className="text-lg md:text-2xl opacity-75">
+            Energywise provides tools and resources to help you track, analyze, and optimize
+            your <br /> energy consumption, leading to cost savings and a greener future.
+          </p>
+          <div className="md:flex md:justify-center mt-12">
+            <div className="lg:py-6 lg:px-12 bg-white bg-opacity-10 w-fit mx-auto mb-8 rounded-full survey-button">
+              <a
+                href="https://energywise.solutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full rounded-full flex items-center justify-center text-black font-bold text-xl md:text-2xl lg:text-4xl"
+                style={{ backgroundColor: '#E4FF1A', padding: '1rem' }}
+              >
+                Take Survey
+              </a>
+            </div>
+            <form action="------" method="post" target="_blank">
+              <div className="flex flex-col md:flex-row justify-center items-center mb-4">
+                <input
+                  placeholder="Your email address"
+                  type="email"
+                  id="email"
+                  name="member[email]"
+                  className="text-lg md:text-2xl placeholder:text-gray-400 placeholder-italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10
                 focus:bg-opacity-20 duration-150 rounded-full md:rounded-tr-none md:rounded-br-none mb-4 md:mb-0 outline-none"
-                value={emailInputValue}
-                onChange={handleEmailInputChange}
-              />
-              <div className="flex-shrink-0">
-                <a
-                  href="mailto:team@energywise.solutions?subject=I'm interested in energywise&body=I would like to learn more about energywise, please keep me updated"
-                  className="bg-primary rounded-full md:rounded-tl-none
+                  value={emailInputValue}
+                  onChange={handleEmailInputChange}
+                />
+                <div className="flex-shrink-0">
+                  <a
+                    href="mailto:team@energywise.solutions?subject=I'm interested in energywise&body=I would like to learn more about energywise, please keep me updated"
+                    className="bg-primary rounded-full md:rounded-tl-none
                   md:rounded-bl-none text-lg md:text-2xl py-4 px-6 md:px-10 lg:py-6
                   lg:px-12 cursor-pointer hover:opacity-75 duration-150 text-black font-bold"
-                  style={{ backgroundColor: '#E4FF1A' }}
-                  onClick={validateEmail}
-                >
-                  Join Beta
-                </a>
+                    style={{ backgroundColor: '#E4FF1A' }}
+                    onClick={validateEmail}
+                  >
+                    Join Beta
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div className="opacity-75 italic">
-              By subscribing, you agree with Energywise{' '}
-              <a
-                target="_blank"
-                href="https://energywise.solutions/privacy"
-                className="hover:opacity-80 duration-150"
-                rel="noreferrer"
-              >
-                T&amp;C
-              </a>{' '}
-              and{' '}
-              <a
-                target="_blank"
-                href="https://energywise.solutions/"
-                className="hover:opacity-80 duration-150"
-                rel="noreferrer"
-              >
-                Privacy Policy
-              </a>
-              .
-            </div>
-          </form>
+              <div className="opacity-75 italic">
+                By subscribing, you agree with Energywise{' '}
+                <a
+                  target="_blank"
+                  href="https://energywise.solutions/privacy"
+                  className="hover:opacity-80 duration-150"
+                  rel="noreferrer"
+                >
+                  T&amp;C
+                </a>{' '}
+                and{' '}
+                <a
+                  target="_blank"
+                  href="https://energywise.solutions/"
+                  className="hover:opacity-80 duration-150"
+                  rel="noreferrer"
+                >
+                  Privacy Policy
+                </a>
+                .
+              </div>
+            </form>
+          </div>
         </div>
       </main>
     </div>
