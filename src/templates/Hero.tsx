@@ -66,8 +66,8 @@ export const Hero = () => {
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-            whileTap={{ scale: 0.9 }}
+            //whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+            //whileTap={{ scale: 0.9 }}
             href="https://github.com/hoonsubin/energywise-homepage"
           >
             GitHub
@@ -121,8 +121,8 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="block w-full h-full rounded-full flex items-center justify-center text-black font-bold text-xl md:text-2xl lg:text-4xl"
               style={{ backgroundColor: '#E4FF1A', padding: '1rem' }}
-              whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-              whileTap={{ scale: 0.9 }}
+              //whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+              //whileTap={{ scale: 0.9 }}
             >
               Take Survey
             </a>
