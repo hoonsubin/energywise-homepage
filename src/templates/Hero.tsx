@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Logo } from './Logo';
 
+
+
 export const Hero = () => {
   const heroImageRef = useRef<HTMLDivElement>(null);
 
