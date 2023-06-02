@@ -92,15 +92,14 @@ export const Hero = () => {
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight">
             The simplest way to get started with your <br /> energy-saving journey
           </h2>
-          <p className="text-lg md:text-2xl opacity-75">
-            Energywise provides tools and resources to help you track and optimize your energy consumption, leading to cost savings and a
-            more sustainable future.
+
+          <p className="text-lg md:text-xl xl:text-2xl leading-relaxed mb-8 md:mb-12">
+            Energywise is a platform that helps you track and optimize your energy consumption,
+            leading to cost savings and a more sustainable future.
           </p>
 
           <div className="flex justify-center mt-12 mb-12">
-            <div
-              className="mr-4 md:mr-6 xl:mr-8 mb-4 lg:mb-0 rounded-full survey-button"
-            >
+            <div className="mr-4 md:mr-6 xl:mr-8 mb-4 lg:mb-0 rounded-full survey-button">
               <a
                 href="https://energywise.solutions/"
                 target="_blank"
