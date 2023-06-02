@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback, useState } from 'react';
 
-import { motion } from 'framer-motion';
+//import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -57,7 +57,7 @@ export const Hero = () => {
           <Logo xl />
         </div>
         <div className="flex justify-end">
-          <motion.a
+          <a
             className="text-white"
             target="_blank"
             rel="noopener noreferrer"
@@ -66,7 +66,7 @@ export const Hero = () => {
             href="https://github.com/hoonsubin/energywise-homepage"
           >
             GitHub
-          </motion.a>
+          </a>
           <Link href="/">
             <a className="ml-4 text-white">Sign in</a>
           </Link>
@@ -75,7 +75,7 @@ export const Hero = () => {
       <main className="container mx-auto px-6 pt-16 flex-1 text-center relative">
         <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
           <div id="hero-image" className="hero-image">
-            <motion.div
+            <div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.5 }}
@@ -89,28 +89,28 @@ export const Hero = () => {
                 quality={100}
                 className="opacity-70"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
         <div className="relative z-10">
-          <motion.h2
+          <h2
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="text-1xl md:text-2xl lg:text-4xl"
           >
             The simplest way to get started with your
-          </motion.h2>
-          <motion.h1
+          </h2>
+          <h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="text-3xl md:text-8xl lg:text-10xl font-black uppercase mb-8"
           >
             home EV charging station
-          </motion.h1>
+          </h1>
           <div className="text-lg md:text-2xl ls:text-3xl py-2 px-4 md:py-4 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 w-fit mx-auto mb-8 rounded-full survey-button">
-            <motion.a
+            <a
               href="https://energywise.solutions/"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,7 +120,7 @@ export const Hero = () => {
               whileTap={{ scale: 0.9 }}
             >
               Take Survey
-            </motion.a>
+            </a>
           </div>
           <form action="------" method="post" target="_blank">
             <div className="flex flex-col md:flex-row justify-center items-center mb-4">
