@@ -98,8 +98,7 @@ export const Hero = () => {
             The simplest way to get started with your <br /> energy-saving journey
           </h2>
           <p className="text-lg md:text-2xl opacity-75">
-            Energywise provides tools and resources to help you track, analyze, ⏎············and·optimize·your⏎············
-            energy consumption, leading to cost savings and a greener future.
+            Energywise provides tools and resources to help you track, analyze, and optimize your energy consumption, leading to cost savings and a greener future.
           </p>
 
           <div className="md:flex md:justify-center mt-12">
@@ -169,3 +168,4 @@ export const Hero = () => {
     </div>
   );
 };
+export default Hero;
