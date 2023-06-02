@@ -75,10 +75,7 @@ export const Hero = () => {
       <main className="container mx-auto px-6 pt-16 flex-1 text-center relative">
         <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
           <div id="hero-image" className="hero-image" ref={heroImageRef}>
-            <div
-              className="absolute inset-0 z-0 overflow-hidden rounded-lg"
-              style={{ opacity: 0, transform: 'scale(0.8)' }}
-            >
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-lg" style={{ opacity: 0, transform: 'scale(0.8)' }}>
               <Image
                 src="/assets/images/herobanner.jpg"
                 alt="Image description"
@@ -96,11 +93,14 @@ export const Hero = () => {
             The simplest way to get started with your <br /> energy-saving journey
           </h2>
           <p className="text-lg md:text-2xl opacity-75">
-            Energywise provides tools and resources to help you track, analyze, and optimize your energy consumption, leading to cost savings and a greener future.
+            Energywise provides tools and resources to help you track and optimize your energy consumption, leading to cost savings and a
+            more sustainable future.
           </p>
 
-          <div className="md:flex md:justify-center mt-12">
-            <div className="lg:mr-4 mb-4 lg:mb-0 rounded-full survey-button">
+          <div className="flex justify-center mt-12 mb-12">
+            <div
+              className="mr-4 md:mr-6 xl:mr-8 mb-4 lg:mb-0 rounded-full survey-button"
+            >
               <a
                 href="https://energywise.solutions/"
                 target="_blank"
