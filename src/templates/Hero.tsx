@@ -92,7 +92,8 @@ export const Hero = () => {
         </div>
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight">
-            The simplest way to get started with your <br /> energy-saving journey
+            The simplest way to get started with your 
+            <br /> energy-saving journey
           </h2>
           <p className="text-lg md:text-2xl opacity-75">
             Energywise provides tools and resources to help you track, analyze, and optimize
