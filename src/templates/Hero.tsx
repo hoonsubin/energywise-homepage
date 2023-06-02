@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback, useState, useRef } from 'react';
 import Image from 'next/image';
+
 import Link from 'next/link';
 import { Logo } from './Logo';
 
@@ -97,7 +98,7 @@ export const Hero = () => {
             The simplest way to get started with your <br /> energy-saving journey
           </h2>
           <p className="text-lg md:text-2xl opacity-75">
-            Energywise provides tools and resources to help you track, analyze, and optimize your<br />
+            Energywise provides tools and resources to help you track, analyze, ⏎············and·optimize·your⏎············
             energy consumption, leading to cost savings and a greener future.
           </p>
 
