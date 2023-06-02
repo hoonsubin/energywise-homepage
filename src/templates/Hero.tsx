@@ -18,11 +18,9 @@ export const Hero = () => {
         const { scrollY } = window;
 
         if (scrollY > prevScrollY) {
-          // Scrolling down, hide the image
-          heroImage.style.opacity = '0';
+          heroImage.style.opacity = '0'; // Scrolling down, hide the image
         } else {
-          // Scrolling up, show the image
-          heroImage.style.opacity = '1';
+          heroImage.style.opacity = '1'; // Scrolling up, show the image
         }
 
         prevScrollY = scrollY;
@@ -90,7 +88,7 @@ export const Hero = () => {
 
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight">
-            The simplest way to get started with your <br /> energy-saving journey
+            The simplest way to get started with your energy-saving journey
           </h2>
 
           <p className="text-lg md:text-xl xl:text-2xl leading-relaxed mb-8 md:mb-12">
