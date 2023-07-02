@@ -1,0 +1,8 @@
+.feedback-btn {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.feedback-btn:hover {
+  border: 1px solid white !important;
+}

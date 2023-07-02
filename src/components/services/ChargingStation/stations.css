@@ -1,0 +1,66 @@
+.stations-modal__content {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 10px;
+  justify-content: space-between;
+  align-content: flex-start;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.services__item {
+  margin-bottom: 20px;
+}
+
+.stations-modal {
+  width: 80vw !important;
+}
+
+@media (max-width: 768px) {
+  .stations-modal {
+    width: 90vw !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .stations-modal {
+    width: 95vw !important;
+  }
+}
+
+.stations-modal__card {
+  color: #eee !important;
+}
+
+.stations-modal__card .ant-card-head-title {
+  color: #E4FF1A;
+}
+
+.stations-modal__card:hover .ant-card-head-title {
+    color: black;
+  }
+
+.stations-modal__card :hover {
+  color: black !important;
+}
+
+.ant-collapse-header {
+  color: white !important;
+}
+
+.stations-modal__card:hover .ant-collapse-header {
+  color: black !important;
+}
+
+.ant-collapse-header {
+  font-weight: bold;
+}
+/* 
+.ant-descriptions-item-content:hover {
+  color: black !important;
+}
+
+.ant-descriptions-item-content {
+  color: white !important;
+} */
+

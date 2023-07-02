@@ -1,0 +1,133 @@
+header {
+  width: auto;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  position: relative;
+}
+
+/* =============== CTA ============== */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* =============== HEADER SOCIALS ============== */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* =============== ME ============== */
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  width: 40%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+/* =============== SCROLL DOWN ============== */
+
+.scroll__down {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: #000;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll__down:hover {
+  opacity: 1;
+  color: black;
+}
+
+.scroll__down.black {
+  border: 1px solid black;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+/* @media screen and (max-width: 1038px) {
+  .me {
+    width: 70%;
+  }
+} */
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 620px) {
+  /* header {
+    height: 120vh;
+    padding-top: 4rem;
+  } */
+
+  .scroll__down {
+    display: none;
+  }
+
+  .me {
+    width: 100%;
+    margin-top: 2.5rem;
+    justify-content: center;
+  }
+
+  .cta {
+    margin-top: 1.7rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /* header {
+    height: 150vh;
+    padding-top: 4rem;
+  } */
+}
+
+.me img.animate_ {
+  animation: move-up-down 2s ease-in-out infinite;
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
