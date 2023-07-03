@@ -1,0 +1,45 @@
+.technician-modal__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-content: space-between;
+  align-content: flex-start;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.services__item {
+  margin-bottom: 20px;
+}
+
+.technician-modal {
+  width: 80vw !important;
+}
+
+@media (max-width: 768px) {
+  .technician-modal {
+    width: 90vw !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .technician-modal {
+    width: 95vw !important;
+  }
+}
+
+.technician-modal__card {
+  color: #eee !important;
+}
+
+.technician-modal__card .ant-card-head-title {
+  color: #E4FF1A;
+}
+
+.technician-modal__card:hover .ant-card-head-title {
+    color: black;
+  }
+
+.technician-modal__card :hover {
+  color: black !important;
+}
