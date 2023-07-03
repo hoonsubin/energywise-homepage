@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import './footer.css'
 import {FaFacebookF} from 'react-icons/fa'
