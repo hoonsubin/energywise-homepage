@@ -27,10 +27,10 @@ const HeaderSocials = () => {
 
   return (
     <div className={`header__socials ${isFooterVisible ? "black" : ""}`}>
-      <a href="https://linkedin.com" target="_blank">
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">
         <BsLinkedin className="ld" />
       </a>
-      <a href="https://github.com" target="_blank">
+      <a href="https://github.com" target="_blank" rel="noreferrer">
         <FaGithub className="git" />
       </a>
     </div>
