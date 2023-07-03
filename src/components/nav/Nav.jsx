@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./nav.css";
 import React, { useState, useEffect } from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
