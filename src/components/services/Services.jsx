@@ -15,6 +15,7 @@ const data = [
     title: "Charging Station Assessment",
     about:
       "This survey will ask the customer questions about their daily driving habits, the type of EV they own, their home's electrical setup, and other relevant factors to determine the most suitable charging options for them.",
+    link: "https://app.energywise.solutions/survey",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const data = [
     title: "Charging Station Directory",
     about:
       "energywise will provide the customer with a list of charging station hardware and software options that best meet their needs, along with pricing information and installation options.",
+    link: "https://app.energywise.solutions/station",
   },
   {
     id: 3,
@@ -29,8 +31,10 @@ const data = [
     title: "Electrician Directory",
     about:
       "By simply entering their location, customers can access a list of reliable technicians in their area, complete with contact information and customer reviews.",
+    link: "https://app.energywise.solutions/technicians",
   },
 ];
+
 
 const Services = () => {
   const [selectedItemId, setSelectedItemId] = useState(null);
@@ -50,10 +54,13 @@ const Services = () => {
       <h2>Our Services</h2>
 
       <div className="container services__container">
-        {data.map(({ id, image, title, about }) => {
+        {data.map(({ id, image, title, about, link }) => {
           return (
-            <article
+            <a
               key={id}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="services__item"
               onClick={() => handleItemClick(id)}
             >
@@ -64,7 +71,7 @@ const Services = () => {
               <div className="services__item-cta">
                 <p> {about} </p>
               </div>
-            </article>
+            </a>
           );
         })}
 
