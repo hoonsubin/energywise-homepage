@@ -30,7 +30,7 @@ const HeaderSocials = () => {
       <a href="https://linkedin.com" target="_blank" rel="noreferrer">
         <BsLinkedin className="ld" />
       </a>
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a href="https://github.com/hoonsubin/energywise-homepage" target="_blank" rel="noreferrer">
         <FaGithub className="git" />
       </a>
     </div>
