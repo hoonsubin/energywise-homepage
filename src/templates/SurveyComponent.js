@@ -27,7 +27,7 @@ const SurveyComponent = () => {
       }}
     >
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeIyYyHaHuQaF5UmlyT-HlWWsHyGgonRSfgtNLhdQ88JcKEaw/viewform?embedded=true"
+        src="https://app.energywise.solutions"
         id="survey-iframe"
         title="Survey"
         onLoad={() => {
